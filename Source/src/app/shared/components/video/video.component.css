@@ -1,0 +1,84 @@
+.video-container {
+  height: 100%;
+  height: -moz-calc(100% - (50px + 45px + 55px));
+  height: -webkit-calc(100% - (50px + 45px + 55px));
+  height: calc(100% - (50px + 45px + 55px));
+  margin: 0 40px;
+  padding-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-full-screen-container {
+  height: 100%;
+  height: -moz-calc(100% - (45px + 55px));
+  height: -webkit-calc(100% - (45px + 55px));
+  height: calc(100% - (45px + 55px));
+}
+
+video {
+  background: #fff;
+  background: #242424;
+  background: #444444;
+}
+
+.remote-video {
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.video-content {
+  height: 100%;
+}
+
+.local-video {
+  position: absolute;
+  right: 6%;
+  top: 15%;
+  border-radius: 3px;
+  height: 151px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.contact-control {
+  height: 55px;
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+  margin: 5px 5% 5px 0;
+}
+
+.timer-control {
+  height: 55px;
+  margin: 5px 0 5px 0;
+  color: #fff;
+  padding-top: 25px;
+}
+
+.contact-control span {
+  background: #181818;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.timer-control label {
+  cursor: context-menu;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contact-control mat-icon {
+  color: #fff;
+  padding: 10px 10px;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+}

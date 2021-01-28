@@ -1,0 +1,14 @@
+<div class="video-control-container">
+    <span (click)="toggleVideoClick()">
+        <mat-icon>{{videoStatus ? 'videocam' : 'videocam_off'}}</mat-icon>
+    </span>
+    <span (click)="toggleAudioClick()">
+        <mat-icon>{{audioStatus ? 'mic' : 'mic_off'}}</mat-icon>
+    </span>
+    <span (click)="toggleScreenClick()">
+        <mat-icon>{{screenStatus ? 'fullscreen' : 'fullscreen_exit'}}</mat-icon>
+    </span>
+    <span *ngIf="isDoctor" class="call-end"  (click)="callEndClick()">
+        <mat-icon>call_end</mat-icon>
+    </span>
+</div>

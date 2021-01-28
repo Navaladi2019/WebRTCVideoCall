@@ -1,0 +1,6 @@
+@media screen and (min-width: 280px) and (max-width: 450px) {
+  .account-detail {
+    padding-right: 0px;
+    padding-top: 15px;
+  }
+}

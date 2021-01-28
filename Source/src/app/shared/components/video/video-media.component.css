@@ -1,0 +1,43 @@
+@media screen and (min-width: 280px) and (max-width: 450px) {
+  .video-container {
+    height: 100%;
+    height: -moz-calc(100% - (50px + 45px + 30px));
+    height: -webkit-calc(100% - (50px + 45px + 30px));
+    height: calc(100% - (50px + 45px + 30px));
+  }
+
+  .local-video {
+    top: 5%;
+    height: 65px;
+  }
+
+  .video-container {
+    margin: 0 20px;
+  }
+
+  .timer-control {
+    height: 30px;
+    padding-top: 8px;
+  }
+
+  .timer-control label {
+    font-size: 12px;
+  }
+
+  .contact-control {
+    height: 30px;
+  }
+
+  .contact-control span {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+  }
+
+  .contact-control mat-icon {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 5px 5px;
+  }
+}

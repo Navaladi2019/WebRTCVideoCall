@@ -1,0 +1,41 @@
+.common-header-container {
+  background: #0a3a75;
+  color: #fff;
+  height: 50px;
+}
+
+.logo-header {
+  position: absolute;
+  left: 30%;
+}
+
+.logo-menu {
+  position: relative;
+  margin-left: 15%;
+}
+
+.logo-header img {
+  height: 35px;
+  margin: 10px 0;
+  padding: 0 35px;
+}
+
+.logo-menu mat-icon {
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.account-detail {
+  padding-right: 40px;
+  padding-top: 15px;
+}
+
+.account-detail label {
+  margin-right: 12px;
+}
+
+.account-detail mat-icon {
+  vertical-align: middle;
+  cursor: pointer;
+}

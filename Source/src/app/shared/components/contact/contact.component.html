@@ -1,0 +1,38 @@
+<jqxWindow id="testJQx" #contactWindow [width]="300" [height]="400" [cancelButton]="'.cancelButton'" [resizable]="true"
+    [position]="{ x: 10, y: 80 }" [showCollapseButton]="true" [autoOpen]="false">
+    <div> Contacts</div>
+    <div id="contactWindowContent" style="overflow: hidden;">
+        <div class="search-contact">
+            <p>
+                <mat-form-field appearance="outline" [color]="'accent'">
+                    <input id="searchContact" (input)="onChange($event)" matInput placeholder="Search Contact" autocomplete="off">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+            </p>
+        </div>
+        <div class="contact-list">
+            <div *ngFor="let user of users" class="contact" id="{{user.id}}">
+                <div class="contact-image">
+                    <img src="../../../../assets/images/login-cover.png">
+                </div>
+                <!-- <span class="contact-status"></span> -->
+                <div class="contact-detail">
+                    <div class="contact-name">
+                        <label #userName>{{user.firstName}} {{user.lastName}}</label>
+                    </div>
+                    <div class="contact-address">
+                        <label>{{user.email}}</label>
+                    </div>
+                </div>
+                <div class="d-none">
+                    <p #userId id="userId">
+                        {{user.id}}
+                    </p>
+                </div>
+                <div class="contact-connect" (click)="contactDataClick(userId, userName)">
+                    <mat-icon>call</mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</jqxWindow>

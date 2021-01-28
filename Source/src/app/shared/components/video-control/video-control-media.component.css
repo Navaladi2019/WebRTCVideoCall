@@ -1,0 +1,18 @@
+@media screen and (min-width: 280px) and (max-width: 450px) {
+  .video-control-container {
+    height: 30px;
+  }
+
+  .video-control-container span {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+  }
+
+  .video-control-container span mat-icon {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 5px 5px;
+  }
+}

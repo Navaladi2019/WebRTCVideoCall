@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  overflow: hidden;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0 0 0.5em 0;
+}
+
+.mat-form-field-label-wrapper {
+  top: -1.05em;
+  padding-top: 1.05em;
+}
+
+.mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+input.mat-input-element {
+  margin-bottom: 0.2em;
+  height: 20px;
+  margin-top: 0;
+}
+
+.login-form .mat-form-field-appearance-outline .mat-form-field-outline {
+  background: #e4e4e4;
+  border-radius: 5px;
+}
+
+.mat-accent .mat-input-element {
+  caret-color: #00c2a7;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label.mat-accent {
+  color: #0a3a75;
+}
+
+.mat-form-field-appearance-outline.mat-focused.mat-accent
+  .mat-form-field-outline-thick {
+  color: #0a3a75;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-flex:hover {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.jqx-widget-header {
+  background: #0a3a75 !important;
+  border-color: #0a3a75 !important;
+  color: #fff !important;
+}
+
+.jqx-window-close-button {
+  background-image: url(./assets/images/window-close.png) !important;
+}
+
+.jqx-window-collapse-button {
+  background-image: url(./assets/images/dash.png) !important;
+}
+
+.jqx-window-collapse-button-background {
+  margin-right: 20px !important;
+}
+.jqx-widget-content {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.jqx-widget-header{
+  height: 25px !important;
+}

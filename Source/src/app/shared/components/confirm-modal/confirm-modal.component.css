@@ -1,0 +1,19 @@
+button:focus {
+    outline: none;
+  }
+  
+  .modal-header {
+    padding: 5px 15px;
+  }
+  
+  .modal-footer {
+    padding: 0;
+    border: none;
+  }
+  
+  .modal-footer button {
+    width: 100px;
+    height: 30px;
+    padding: 0;
+  }
+  

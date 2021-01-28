@@ -1,0 +1,41 @@
+<div class="video-content">
+    <div [ngClass]="(screenStatus==false)?'video-full-screen-container':''" class="video-container">
+        <app-loader [loaderHide]="loaderHide" [loaderMessage]="loaderMessage"></app-loader>
+        <video #remoteVideo autoplay class="remote-video"></video>
+        <video #localVideo autoplay class="local-video"></video>
+    </div>
+    <div class="video-footer">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-4">
+                    <div class="timer-control text-center">
+                        <label>{{timerMessage}}</label>
+                        <!-- <label>15:45:20</label> -->
+                    </div>
+                </div>
+                <div class="col-4">
+                    <app-video-control #videoControl (toggleVideo)="toggleVideoEvent()"
+                        (toggleAudio)="toggleAudioEvent()" (toggleScreen)="toggleScreenEvent()"
+                        (endCall)="EndCallEvent()" [videoStatus]="videoStatus" [audioStatus]="audioStatus"
+                        [screenStatus]="screenStatus" [isDoctor]="isDoctor">
+                    </app-video-control>
+                </div>
+                <div class="col-4">
+                    <div *ngIf="isDoctor" class="contact-control">
+                        <span (click)="openContact()">
+                            <mat-icon>person</mat-icon>
+                        </span>
+                        <!-- <span (click)="openChat()">
+                            <mat-icon>forum</mat-icon>
+                        </span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <app-chat #videoChat></app-chat> -->
+<app-contact #videoContact (contactClick)="contactClickEvent($event)" [users]="users"></app-contact>
+
+<span id="dummyBtn" style="display: none;" (click)='dummyEvent()'></span>
